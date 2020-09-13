@@ -16,6 +16,8 @@ import { MyProfileComponent } from './my-profile/my-profile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorComponent } from './error/error.component';
 import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { RouterModule } from '@angular/router';
     SizeSelectionComponent,
     SignInComponent,
     MyProfileComponent,
-    ErrorComponent
+    ErrorComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
