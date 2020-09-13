@@ -1,0 +1,76 @@
+.faq{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: 90px;
+    background: #F7F4F0;
+}
+
+.faq-body {
+width: 1416px;
+height: 100%;
+left: 0px;
+top: 0px;
+background: #FAFAFA !important;
+display: flex;
+justify-content: center;
+}
+
+.faq-title {
+position: absolute;
+font-family: Fira Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 50px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+white-space: nowrap;
+/* Accent Smarthwhite */
+color: #e4b260;
+}
+
+.accordion {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.title {
+    width: 227px;
+    height: 29px;
+    left: 40px;
+    top: 34px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-left: 25px;
+}
+::ng-deep .mat-expansion-indicator{
+    position: absolute;
+    margin-top: -3px;
+}
+
+.accordion-elements {
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 97%;
+    height: 1px;
+    left: 0px;
+    top: 101px;
+    margin-left: 25px;
+
+    background: #E6E2DC;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+

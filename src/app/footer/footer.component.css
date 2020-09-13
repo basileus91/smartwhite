@@ -1,5 +1,5 @@
 .footer {
-position: absolute;
+position: fixed;
 left: 0%;
 right: 0%;
 bottom: 0%;
@@ -40,7 +40,7 @@ text-transform: uppercase;
 }
 
 .text-button {
-    position: static;
+position: static;
 left: 6.94%;
 right: 6.94%;
 top: 23.81%;

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
@@ -18,6 +18,13 @@ import { ErrorComponent } from './error/error.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlackHeaderComponent } from './black-header/black-header.component';
+import { FaqComponent } from './faq/faq.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TermsComponent } from './terms/terms.component';
+import { PolicyComponent } from './policy/policy.component';
+import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +42,22 @@ import { FooterComponent } from './footer/footer.component';
     MyProfileComponent,
     ErrorComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlackHeaderComponent,
+    FaqComponent,
+    TermsComponent,
+    PolicyComponent,
+    DeliveryTimeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    MatExpansionModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

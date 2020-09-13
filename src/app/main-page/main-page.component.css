@@ -1,9 +1,8 @@
-.body {
+.body{
+    position: absolute;
     width: 100%;
-    padding-top: 90px;
-    padding-bottom: 130px;
-    left: 0%;
-    right: 0%;
-    /* Defaul Light Theme */
+    height: 100%;
+    left: -1px;
+    top: 90px;
     background: #F7F4F0;
 }

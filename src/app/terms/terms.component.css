@@ -1,0 +1,60 @@
+.terms {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: 90px;
+    background: #F7F4F0;
+    padding-bottom: 400px;
+}
+
+.terms-body {
+    width: inherit;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FAFAFA !important;
+    display: flex;
+    justify-content: center;
+}
+    
+.terms-title {
+    position: absolute;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    /* Accent Smarthwhite */
+    color: #e4b260;
+}
+
+.terms-description {
+    margin-top: 35px;
+    font-size: 15px;
+}
+
+.terms-body-description {
+    width: 1138px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FAFAFA !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: -14px;
+}
+
+.h6-title {
+    padding-left: 10px !important;
+    display: inline-block;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.span-description {
+    padding-left: 10px;
+}
