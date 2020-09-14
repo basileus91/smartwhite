@@ -1,0 +1,47 @@
+.our-story {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: 90px;
+    padding-bottom: 400px;
+
+
+/* Bold Text Gradient */
+
+    background: #0A0A0A;
+}
+
+.our-story-text {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 140px;
+    line-height: 80px;
+    padding-top: 100px;
+    z-index: inherit 2;
+/* identical to box height, or 36% */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-story-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: inherit 1;
+    /* Accent Smarthwhite */
+    color: #e4b260;
+}
+

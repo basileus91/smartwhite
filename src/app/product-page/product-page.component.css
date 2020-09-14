@@ -1,0 +1,120 @@
+.products {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: -1px;
+    top: 90px;
+    padding-bottom: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* Bold Text Gradient */
+    background: #0A0A0A;
+}
+
+.product-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: inherit 1;
+    /* Accent Smarthwhite */
+    color: #e4b260;
+}
+
+.first-title-0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 257px;
+    height: 48px;
+    left: 284px;
+    top: 352px;
+    white-space: nowrap;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 133% */
+
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.first-title {
+    width: 445px;
+    height: 130px;
+    left: 252px;
+    top: 323px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+
+.product-title-description-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 257px;
+    height: 48px;
+    left: 284px;
+    top: 352px;
+    padding-left: 183px;
+    white-space: nowrap;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 133% */
+
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.product-title-description-2 {
+    position: flex;
+    width: 470px;
+    height: 192px;
+    left: 252px;
+    top: 422px;
+    display: flex;
+    justify-content: center;
+    padding-left: 85px;
+
+    /* Default Type */
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+

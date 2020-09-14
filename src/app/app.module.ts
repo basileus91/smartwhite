@@ -25,6 +25,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
+import { NgxImageZoomModule } from 'ngx-image-zoom';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
     RouterModule,
     MatExpansionModule,
     BrowserAnimationsModule,
+    NgxImageZoomModule 
   ],
   providers: [],
   bootstrap: [AppComponent],

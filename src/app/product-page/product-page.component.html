@@ -1,1 +1,51 @@
-<p>product-page works!</p>
+<app-black-header></app-black-header>
+<div class="products">
+    <div>
+        <div class="row">
+            <div class="col">
+                <span class="first-title-0">представляем</span>
+                <span class="first-title">Smartwhite Oxford Slim Fit</span>
+            </div>
+            <div class="col" style="width: 100px;"></div>
+            <div class="col">
+                <lib-ngx-image-zoom
+                    [thumbImage]="'../../assets/images/tshirt.png'"
+                    [magnification]="2.5"
+                    [zoomMode]="'hover'"
+                    [enableLens]="true"
+                    [lensWidth]="100"
+                    [lensHeight]="100"
+                    [circularLens]="true">
+                </lib-ngx-image-zoom>   
+                <!-- <img width="450" height="500" src="../../assets/images/tshirt.png">  -->
+            </div>
+        </div>
+        <div class="row" style="padding-top: 100px;">
+            <div class="col">
+                <span class="product-title">
+                    <img src="../../assets/images/Rectangle.png">&nbsp;&nbsp;
+                    Хлопок класса люкс
+                </span>
+                <span class="product-title-description-1">Длина имеет значение</span>
+                <span class="product-title-description-2">
+                    Рубашки SmartWhite изготовлены из длинноволокнистого американского хлопка стандарта Supima® – лишь 1% вырабатываемого в мире сырья соответствует строгим требованиям этого сертификата. Полотно из хлопка Supima®легче, мягче и на 45% прочнее обычного. Ткань “дышит” и исключает образование катышков.
+                </span>
+            </div>
+            <div class="col" style="width: 100px;"></div>
+            <div class="col">
+                <lib-ngx-image-zoom
+                    [thumbImage]="'../../assets/images/tshirt.png'"
+                    [magnification]="2.5"
+                    [zoomMode]="'hover'"
+                    [enableLens]="true"
+                    [lensWidth]="100"
+                    [lensHeight]="100"
+                    [circularLens]="true">
+                </lib-ngx-image-zoom>
+            </div>
+        </div>
+        
+            
+    </div>
+        
+</div>
