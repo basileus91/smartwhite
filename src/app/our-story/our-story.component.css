@@ -4,7 +4,7 @@
     height: 100%;
     left: -1px;
     top: 90px;
-    padding-bottom: 400px;
+    padding-bottom: 560px;
 
 
 /* Bold Text Gradient */
@@ -40,8 +40,52 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: inherit 1;
     /* Accent Smarthwhite */
     color: #e4b260;
 }
 
+.description {
+    position: absolute;
+    width: 386px;
+    height: 290px;
+    left: 472px;
+    top: 200px;
+
+    /* Default Type */
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.description-2 {
+    position: absolute;
+    width: 386px;
+    height: 290px;
+    left: 800px;
+    top: 470px;
+
+    /* Default Type */
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}

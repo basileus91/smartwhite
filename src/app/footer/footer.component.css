@@ -1,9 +1,9 @@
 .footer {
-position: fixed;
+position: inherit;
 left: 0%;
 right: 0%;
 bottom: 0%;
-height: 250px;
+height: 320px;
 background: #000000;
 
 }
