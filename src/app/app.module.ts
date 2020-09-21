@@ -26,6 +26,9 @@ import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,8 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     FaqComponent,
     TermsComponent,
     PolicyComponent,
-    DeliveryTimeComponent
+    DeliveryTimeComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -56,8 +60,15 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     RouterModule,
     MatExpansionModule,
     BrowserAnimationsModule,
-    NgxImageZoomModule 
+    NgxImageZoomModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

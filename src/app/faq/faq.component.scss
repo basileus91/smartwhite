@@ -78,3 +78,36 @@ color: #e4b260;
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
+.second-title {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    color: #0A0A0A;
+}
+
+.inside-second-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 34px;
+    /* or 212% */
+
+    letter-spacing: 0.02em;
+
+    color: #333333;
+}
+
+
+

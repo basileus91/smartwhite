@@ -17,6 +17,7 @@ import { FaqComponent } from './faq/faq.component';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
 import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
   {
@@ -74,6 +75,10 @@ const routes: Routes = [
         component: SizeSelectionComponent
       }
     ]
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
   },
   {
     path: 'sign-in',

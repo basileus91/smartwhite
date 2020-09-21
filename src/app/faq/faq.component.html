@@ -1,81 +1,150 @@
 <div class="faq">
-    <div class="container">
-        <div class="row">
-          <div class="col-sm faq-body">
-            <h1 class="faq-title">Frequently asked questions:</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm faq-body">
+        <h1 class="faq-title">Frequently asked questions:</h1>
+
+        <mat-accordion class="accordion">
+          <mat-expansion-panel
+            class="accordion-elements"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title class="title">
+                Smartwhite shirt
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title class="second-title">
+                  HOW DO I CARE FOR MY SHIRT?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <span class="inside-second-title"
+                >Smart White shirts are long-wearing and easy to care for. All
+                you need is to follow the instructions on the care label (Gentle
+                machine or hand wash in cold water only). We recommend you turn
+                all shirts inside-out during laundering. This both protects the
+                buttons from chipping on the steel drum and allows the cleaning
+                agents direct access to sweat stains. And a warm reminder, hang
+                or lay shirt flat to dry to avoid shrinkage from tumble drying.
+                To prolong the life of your shirt, avoid excessive heat and
+                using little to no starch.
+              </span>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="second-title">
+                  What types of fabric do you use?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <span class="inside-second-title"></span>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="second-title">
+                  I’m not sure how to select a size?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <span class="inside-second-title"></span>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="second-title">
+                  What is the difference between Superior Pima cotton and regular cotton?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <span class="inside-second-title"></span>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="second-title">
+                  Does your non – Iron really work?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <span class="inside-second-title"></span>
+            </mat-expansion-panel>
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title class="second-title">
+                  Do your shirts come with removable collar stays?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <span class="inside-second-title"></span>
+            </mat-expansion-panel>
             
-            <mat-accordion class="accordion">
-                <mat-expansion-panel class="accordion-elements" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title class="title">
-                      Smartwhite shirt
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-                <div class="divider"></div>
+          </mat-expansion-panel>
+          <div class="divider"></div>
 
-                <mat-expansion-panel class="accordion-elements" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title class="title">
-                      how to take care of your shirt?
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-                <div class="divider"></div>
+          <mat-expansion-panel
+            class="accordion-elements"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title class="title">
+                how to take care of your shirt?
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+          <div class="divider"></div>
 
-                <mat-expansion-panel class="accordion-elements" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title class="title">
-                      shipment and tracking
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-                <div class="divider"></div>
+          <mat-expansion-panel
+            class="accordion-elements"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title class="title">
+                shipment and tracking
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+          <div class="divider"></div>
 
-                <mat-expansion-panel class="accordion-elements" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title class="title">
-                      returns and refunds
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-                <div class="divider"></div>
+          <mat-expansion-panel
+            class="accordion-elements"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title class="title">
+                returns and refunds
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+          <div class="divider"></div>
 
-                <mat-expansion-panel class="accordion-elements" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title class="title">
-                      anything and everything regarding your order
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-                <div class="divider"></div>
+          <mat-expansion-panel
+            class="accordion-elements"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title class="title">
+                anything and everything regarding your order
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+          <div class="divider"></div>
 
-                <mat-expansion-panel class="accordion-elements" (opened)="panelOpenState = true"
-                                     (closed)="panelOpenState = false">
-                  <mat-expansion-panel-header>
-                    <mat-panel-title class="title">
-                      payment, promotions & discount codes
-                    </mat-panel-title>
-                  </mat-expansion-panel-header>
-                  <p>I'm visible because I am open</p>
-                </mat-expansion-panel>
-
-
-            </mat-accordion>
-
-
-            
-          </div>
-        </div>
+          <mat-expansion-panel
+            class="accordion-elements"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title class="title">
+                payment, promotions & discount codes
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+          </mat-expansion-panel>
+        </mat-accordion>
       </div>
+    </div>
+  </div>
 </div>

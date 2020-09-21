@@ -1,0 +1,135 @@
+.policy {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 90px;
+    background: #F7F4F0;
+}
+
+.policy-body {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FAFAFA !important;
+    display: flex;
+    justify-content: center;
+}
+
+.policy-body-description {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FAFAFA !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: -14px;
+}
+
+.check-box {
+    width: 24px;
+    height: 24px;
+    background: #FAF8F5;
+    border: 2px solid #666666;
+    box-sizing: border-box;
+}
+
+.link {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #666666;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    align-self: center;
+    margin: 48px 0px;
+}
+
+.submit-button {
+    width: 493px;
+    height: 60px;
+/* Accent Smarthwhite */
+    background: #e4b260;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.shipping-information {
+    
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    /* Dark Gradient */
+    color: linear-gradient(96.49deg, #0A0A0A 40.47%, #000000 60.5%);
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    align-self: flex-start;
+}
+
+.text-description {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.text-selection {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.radio-button {
+    width: 40px;
+    margin-left: 5px;
+    height: 40px;
+    left: 1340px;
+    top: 442px;
+    background: #E6E6E6;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555659;
+}
+
+.divider {
+    width: 510px;
+    height: 1px;
+    /* Gray 4 */
+    margin-top: 30px;
+    background: #BDBDBD;
+}

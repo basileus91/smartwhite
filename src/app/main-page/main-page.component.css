@@ -78,3 +78,11 @@ button:hover {
     transition: all 0.4s;
 }
 
+div {
+    opacity:1;
+   -webkit-transition: opacity 1s;
+   -moz-transition: opacity 1s;     
+   transition: opacity 1s; 
+     
+}
+

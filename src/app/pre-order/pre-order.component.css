@@ -1,0 +1,136 @@
+.pre-order {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 90px;
+    background: #F7F4F0;
+}
+
+.container-information { 
+    padding-top: 130px;
+    padding-left: 200px;
+}
+
+.sizing-chart {
+    width: 136px;
+    height: 40px;
+    background: #E5E5E5;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #555659;
+}
+
+.text-selection {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.radio-button {
+    width: 40px;
+    margin-left: 5px;
+    height: 40px;
+    left: 1340px;
+    top: 442px;
+    background: #E6E6E6;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #555659;
+}
+
+.buy {
+    width: 300px;
+    height: 60px;
+    left: 1340px;
+    top: 651px;
+    background: #0A0A0A;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #F2F2F2;
+}
+
+.quantity {
+    padding-bottom: 40px;
+}
+
+button:focus {
+    background: #0A0A0A;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 12px;
+    /* identical to box height, or 86% */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #E5E5E5;
+}
+
+.descritpion {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    /* Blue 1 */
+    color: #2F80ED;
+}
+
+.li-element {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.02em;
+
+    color: #0A0A0A;
+}
+
+.details {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #333333;
+}
