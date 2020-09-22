@@ -3,11 +3,6 @@
     width: 100%;
     height: 100%;
     top: 90px;
-    padding-bottom: 560px;
-
-
-/* Bold Text Gradient */
-
     background: #0A0A0A;
 }
 
@@ -44,47 +39,38 @@
 }
 
 .description {
-    position: absolute;
-    width: 386px;
-    height: 290px;
-    left: 472px;
-    top: 200px;
-
-    /* Default Type */
-
+    width: 400px;
+    margin-left: -150px;
+    padding-bottom: 30px;
     font-family: Fira Sans;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
     /* or 200% */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
-
     color: #FFFFFF;
 }
 
 .description-2 {
-    position: absolute;
-    width: 386px;
-    height: 290px;
-    left: 800px;
-    top: 470px;
-
+    margin-left: 100px;
+    width: 400px;
     /* Default Type */
-
     font-family: Fira Sans;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
     /* or 200% */
-
     display: flex;
     align-items: center;
     letter-spacing: 0.02em;
-
     color: #FFFFFF;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
 }

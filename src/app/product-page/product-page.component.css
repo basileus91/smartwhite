@@ -65,45 +65,49 @@
     font-size: 28px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #e4b260;
     display: flex;
     justify-content: center;
     padding-left: 40px;
 }
 
 .product-title-description-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 257px;
-    height: 48px;
-    left: 284px;
-    top: 352px;
-    padding-left: 183px;
-    white-space: nowrap;
-
     font-family: Fira Sans;
     font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 28px;
     line-height: 24px;
-    /* or 133% */
-
+    /* identical to box height, or 86% */
+    color: #e4b260;
     display: flex;
-    justify-content: center;
-    letter-spacing: 0.12em;
+    align-items: center;
+    letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+
+.product-title-description-1-1 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 86% */
+    color: #e4b260;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding-bottom: 45px;
 }
 .product-title-description-2 {
     position: flex;
-    width: 470px;
+    width: 460px;
     height: 192px;
     left: 252px;
     top: 422px;
     display: flex;
     justify-content: center;
-    padding-left: 85px;
 
     /* Default Type */
 
@@ -115,5 +119,9 @@
     /* or 200% */
     letter-spacing: 0.02em;
     color: #FFFFFF;
+}
+
+.space-line {
+    padding-bottom: 150px;
 }
 
