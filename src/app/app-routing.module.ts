@@ -55,16 +55,10 @@ const routes: Routes = [
   {
     path: 'blog',
     component: BlogComponent,
-    children: [
-      {
-        path: 'create',
-        component: BlogCreateComponent
-      },
-      {
-        path: 'details/:id',
-        component: BlogDetailComponent
-      }
-    ]
+  },
+  {
+    path: 'blog/details',
+    component: BlogDetailComponent
   },
   {
     path: 'pre-order',

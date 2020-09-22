@@ -1,1 +1,47 @@
-<p>blog-detail works!</p>
+<div class="blog">
+    <div class="container">
+        <div class="blog-body">
+            <div class="row">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8 justify-content-center text-center">
+                    <div class="space-bottom"><span>{{blog?.date}}</span></div>
+                    <span class="blog-title space-bottom">{{blog?.type}}: {{blog?.title}}</span>
+                    <div class="space-bottom"><img [src]="blog?.imageURL"></div>      
+                    <div class="space-bottom" *ngIf="blog">
+                        <span>
+                            Laborum est ipsum culpa elit dolore voluptate elit. Labore dolor laboris amet voluptate commodo ullamco sint sunt velit. Irure reprehenderit consectetur et in excepteur do labore enim exercitation. Laborum reprehenderit sint aute minim nostrud et in deserunt. Officia voluptate ullamco reprehenderit ex. Tempor eu enim enim commodo cillum mollit adipisicing exercitation. Cupidatat laborum laborum nisi dolor non quis labore nisi reprehenderit commodo labore dolor. Velit deserunt aute id amet enim labore nisi aliqua dolor do excepteur ea adipisicing cupidatat. Aliquip ullamco ad anim dolor aliqua Lorem minim occaecat do aliqua. Ex ut consectetur aliqua consequat veniam aute. Ullamco ad esse consectetur ullamco. Velit elit ullamco minim reprehenderit do est ipsum commodo quis. Do anim elit nisi dolor eiusmod nostrud consequat minim culpa anim. Id qui dolor esse tempor quis laboris ut laboris anim occaecat ex deserunt. Sit elit adipisicing aliqua velit ad esse veniam pariatur ipsum sit. Ea nulla do consectetur esse quis aute eiusmod. Consectetur pariatur ad nostrud sint duis mollit aliquip eiusmod Lorem adipisicing duis elit consequat. Aliquip ipsum nulla do in tempor sit officia Lorem enim velit labore sint voluptate labore. Id adipisicing laboris proident sint in enim. “Laborum aute magna aute qui nostrud ad ipsum sit id Lorem ex. Ipsum sint occaecat culpa magna eu”. Ut tempor nulla tempor nostrud adipisicing enim non non eiusmod sunt. Proident quis et cillum ullamco. Fugiat ipsum duis magna ea quis labore cillum culpa duis esse. Dolor deserunt labore duis labore duis esse commodo minim ex Lorem cillum tempor mollit. Non voluptate amet aute dolore non ullamco reprehenderit adipisicing ea ex anim adipisicing. Ad culpa do id laboris eiusmod veniam cupidatat id sunt tempor eiusmod ut eiusmod qui. Nostrud Lorem est magna reprehenderit esse qui laborum ea culpa commodo qui proident. Amet do minim nostrud ea non fugiat irure quis amet ad est. Id in et fugiat cupidatat sint velit dolore ut voluptate exercitation ut et. Consequat amet laboru nostrud aliquip esse Lorem eiusmod. Irure ut commodo incididunt ad adipisicing. Veniam cillum exercitation labore aliquip elit laboris et nulla. Consequat adipisicing consequat ea do ullamco eiusmod. Do tempor magna ipsum irure ut. Labore eiusmod cupidatat nostrud ea cillum pariatur eu cillum ex dolore pariatur nisi anim dolore.
+                        </span>
+                    </div>   
+                    <div class="space-bottom" *ngIf="blog">
+                        <a style="padding-right: 15px;" href="https://web.telegram.org/#/login"><img width="30" src="../../../assets/images/telegram.png"></a>
+                        <a style="padding-right: 15px;" href="https://www.facebook.com/"><img width="13" src="../../../assets/images/facebook.png"></a>
+                        <a href="https://twitter.com/home?lang=ru"><img width="30" src="../../../assets/images/twitter.png"></a>
+                    </div>  
+                    <div class="space-bottom" *ngIf="blog">
+                        <h3>Related Articles</h3>
+                    </div>    
+                    <div class="row">
+                        <div class="col-sm-6" *ngFor="let blog of blog?.relatedArticles">
+                            <div class="card" style="width: 18rem; cursor: pointer;" (click)="goToBlog(blog)">
+                                <img [src]="blog?.imageURL" class="card-img-top">
+                                <div class="card-body">
+                                  <p class="card-text">{{blog?.title}}</p>
+                                  <div class="row">
+                                    <div class="col-sm-5">
+                                        <p class="card-text"><small class="text-muted">{{blog?.type}}</small></p>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <p class="card-text"><small class="text-muted">{{blog?.date}}</small></p>
+                                    </div>
+                                  </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+            </div>
+            
+        </div>
+    </div>
+</div>

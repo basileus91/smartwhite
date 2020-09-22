@@ -29,6 +29,7 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { CheckoutComponent } from './checkout/checkout.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -63,7 +64,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     NgxImageZoomModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    NgbModule
   ],
   exports: [
     CommonModule,
