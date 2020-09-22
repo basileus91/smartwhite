@@ -75,10 +75,6 @@ const routes: Routes = [
     component: CheckoutComponent
   },
   {
-    path: 'sign-in',
-    component: SignInComponent
-  },
-  {
     path: 'my-profile/:name',
     component: MyProfileComponent
   },
