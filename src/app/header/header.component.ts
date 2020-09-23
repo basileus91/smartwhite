@@ -16,8 +16,9 @@ export class HeaderComponent implements OnInit {
   userForm: FormGroup;
 
   constructor(
-    private modalService: NgbModal,
-    private readonly fb: FormBuilder
+    private readonly modalService: NgbModal,
+    private readonly fb: FormBuilder,
+    private readonly router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -35,4 +36,8 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  login(): void {
+    this.router.navigate(['/my-profile', 'vasile']);
+    this.modalService.dismissAll();
+  }
 }

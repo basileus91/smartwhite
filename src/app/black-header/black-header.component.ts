@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 
 export interface User {
@@ -19,7 +20,9 @@ export class BlackHeaderComponent implements OnInit {
 
   constructor(
     private modalService: NgbModal,
-    private readonly fb: FormBuilder
+    private readonly fb: FormBuilder,
+    private readonly router: Router,
+    private readonly activatedRouter: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -35,5 +38,10 @@ export class BlackHeaderComponent implements OnInit {
     }, (reason) => {
       this.closeResult = reason;
     });
+  }
+
+  login(): void {
+    this.router.navigate(['/my-profile', 'vasile']);
+    this.modalService.dismissAll();
   }
 }

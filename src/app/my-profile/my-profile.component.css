@@ -1,0 +1,44 @@
+.my-profile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 90px;
+    background: #F7F4F0;
+    padding-bottom: 100px;
+}
+
+.my-profile-body {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: #FAFAFA !important;
+    display: flex;
+    justify-content: center;
+}
+
+.text-element {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0A0A0A;
+    padding-bottom: 30px;
+}
+
+.button {
+    width: 35%; 
+    height: 40px; 
+    background: #e4b260;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
