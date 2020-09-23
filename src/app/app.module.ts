@@ -30,6 +30,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { CheckoutComponent } from './checkout/checkout.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AuthenticationService } from './shared/auth.service';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { AuthGuardService } from './shared/auth-guard.guard';
 
 @NgModule({
   declarations: [
@@ -65,13 +68,14 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule 
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule],
-  providers: [],
+  providers: [AuthenticationService, AuthGuardService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

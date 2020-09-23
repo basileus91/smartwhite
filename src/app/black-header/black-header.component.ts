@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { AuthenticationService } from '../shared/auth.service';
 
 export interface User {
   email: string;
@@ -17,19 +18,24 @@ export class BlackHeaderComponent implements OnInit {
   email: string;
   password: string;
   userForm: FormGroup;
+  errorMessage: string;
+  isLogin: boolean = true;
 
   constructor(
-    private modalService: NgbModal,
+    private readonly modalService: NgbModal,
     private readonly fb: FormBuilder,
     private readonly router: Router,
-    private readonly activatedRouter: ActivatedRoute
+    private readonly authService: AuthenticationService
   ) { }
 
   ngOnInit(): void {
     this.userForm = this.fb.group({
       email: ['', [Validators.required]],
       password: ['', [Validators.required]]
-    })
+    });
+    this.authService.isLogged.subscribe(value => {
+      this.isLogin = value;
+    });
   }
 
   open(content) {
@@ -41,7 +47,19 @@ export class BlackHeaderComponent implements OnInit {
   }
 
   login(): void {
-    this.router.navigate(['/my-profile', 'vasile']);
-    this.modalService.dismissAll();
+    const user = this.authService.login(this.userForm.get('email').value, this.userForm.get('password').value);
+    console.log(user);
+    if (user) {
+      this.router.navigate(['/my-profile', 'vasile']);
+      this.modalService.dismissAll();
+      this.errorMessage = null;
+    } else {
+      this.errorMessage = 'Bad credentials';
+    }
+  }
+
+  signOut(): void {
+    this.authService.isLogged.next(false);
+    this.authService.logout();
   }
 }

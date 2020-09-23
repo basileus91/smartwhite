@@ -4,17 +4,16 @@
             <div class="col-sm-4">
                 <h3>My Account</h3>
                 <div class="col-sm-12" style="background: #FAFAFA; height: 400px">
-                    <div style="font-family: Fira Sans; font-style: normal; font-weight: 500; font-size: 19px; 
-                    line-height: 23px; color: #2F80ED; padding-bottom: 15px; padding-top: 30px;">Personal Details</div>
-                    <div class="text-element">Change Password</div>
-                    <div class="text-element">Manage Address</div>
-                    <div class="text-element">Order History</div>
+                    <div style="padding-top: 30px;" [ngClass]="personalDetails ? 'active' : 'text-element'" (click)="display(1)">Personal Details</div>
+                    <div style="padding-top: 30px;" [ngClass]="changePassord ? 'active' : 'text-element'" (click)="display(2)">Change Password</div>
+                    <div style="padding-top: 30px;" [ngClass]="manageAddress ? 'active' : 'text-element'" (click)="display(3)">Manage Address</div>
+                    <div style="padding-top: 30px;" [ngClass]="orderHistory ? 'active' : 'text-element'" (click)="display(4)">Order History</div>
                 </div>
             </div>
             
             <div class="col-sm-8">
-                <h6 style="padding-bottom: 15px;">Welcome Andrei! Here you can track your orders and manage your personal details.</h6>
-                <div class="col-sm-12" style="background: #FAFAFA; height: 400px">
+                <h6 style="padding-bottom: 15px;">Welcome {{name}}! Here you can track your orders and manage your personal details.</h6>
+                <div *ngIf="personalDetails" class="col-sm-12" style="background: #FAFAFA; height: 400px">
                     <form [formGroup]="userForm" style="padding-bottom: 30px;">
                         <label>First Name</label>
                         <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box;width: 35%;">
@@ -34,6 +33,47 @@
                         </div>
                         <button class="button">Save Changes</button>
                     </form>
+                </div>
+                <div *ngIf="changePassord" class="col-sm-12" style="background: #FAFAFA; height: 400px">
+                    <form [formGroup]="passwordForm" style="padding-bottom: 30px;">
+                        <label>Current Password</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box;width: 35%;">
+                            <input type="password" width="100px" formControlName="oldPassword" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <label>New Password</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box; width: 35%;">
+                            <input type="password" formControlName="newPassword" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <label>Repeat new password</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box; width: 35%;">
+                            <input type="password" formControlName="currentPassword" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <button class="button">Save Changes</button>
+                    </form>
+                </div>
+                <div *ngIf="manageAddress" class="col-sm-12" style="background: #FAFAFA; height: 400px">
+                    <form [formGroup]="addressForm" style="padding-bottom: 30px;">
+                        <label>Address</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box;width: 35%;">
+                            <input width="100px" formControlName="address" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <label>Town / City</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box; width: 35%;">
+                            <input formControlName="city" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <label>Country / State</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box; width: 35%;">
+                            <input formControlName="country" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <label>PostCode / Zip</label>
+                        <div class="mb-2" style="border: 2px solid #666666; box-sizing: border-box; width: 35%;">
+                            <input formControlName="zip" id="Form-pass1" class="form-control validate">
+                        </div>
+                        <button class="button">Save Changes</button>
+                    </form>
+                </div>
+                <div *ngIf="orderHistory" class="col-sm-12" style="background: #FAFAFA; height: 400px">
+                    <span>Inside Order History</span>
                 </div>
             </div>
 

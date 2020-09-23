@@ -30,7 +30,8 @@
             <div class="col-sm"></div>
             <div class="col-sm"></div>
             <div class="col-sm text-button" [routerLink]="['/pre-order']">PRE-ORDER</div>
-            <div class="col-sm col-xs-1 text-button" (click)="open(mymodal)">Sign In</div>
+            <div *ngIf="isLogin === true" class="col-sm col-xs-1 text-button" (click)="open(mymodal)">Sign In</div>
+            <div *ngIf="isLogin === false" class="col-sm col-xs-1 text-button" (click)="signOut()">Sign Out</div>
             <ng-template style="width: 950px;" #mymodal let-modal>
                 <div class="modal-body">
                     <form [formGroup]="userForm">
@@ -42,6 +43,7 @@
                         </div>
                     </form>
                     <button class="login-button" (click)="login()">Login</button>
+                    <span *ngIf="errorMessage" style="font-weight: bold; color: red;">{{errorMessage}}</span>
                     <div class="row" style="padding-bottom: 30px;">
                         <div class="col-sm-5">
                             <p class="font-small blue-text d-flex justify-content-start"><a href="#" class="blue-text ml-1">

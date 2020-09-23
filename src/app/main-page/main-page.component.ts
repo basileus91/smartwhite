@@ -14,7 +14,12 @@ export class MainPageComponent implements OnInit {
   }
   
   displayOtherSlide(): void {
-    this.showSlide++;
+    console.log(this.showSlide);
+    if (this.showSlide >= 17) {
+      this.showSlide = 0;
+    } else {
+      this.showSlide++;
+    }
   }
 
 }

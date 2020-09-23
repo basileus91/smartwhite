@@ -10,7 +10,7 @@ import { BlogCreateComponent } from './blog/blog-create/blog-create.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { PreOrderComponent } from './pre-order/pre-order.component';
 import { SizeSelectionComponent } from './pre-order/size-selection/size-selection.component';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { AuthGuardService } from './shared/auth-guard.guard';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { ErrorComponent } from './error/error.component';
 import { FaqComponent } from './faq/faq.component';
@@ -76,7 +76,8 @@ const routes: Routes = [
   },
   {
     path: 'my-profile/:name',
-    component: MyProfileComponent
+    component: MyProfileComponent,
+    canActivate: [AuthGuardService]
   },
   {
     path: 'error',
@@ -106,7 +107,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/404'
+    redirectTo: '',
+    component: MainPageComponent
   }
 ]
 

@@ -24,7 +24,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #0A0A0A;
-    padding-bottom: 30px;
+    cursor: pointer;
 }
 
 .button {
@@ -41,4 +41,14 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.active {
+    font-family: Fira Sans;
+    font-style: normal; 
+    font-weight: 500; 
+    font-size: 19px; 
+    line-height: 23px; 
+    color: #2F80ED; 
+    cursor: pointer;
 }
