@@ -10,7 +10,6 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogCreateComponent } from './blog/blog-create/blog-create.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { PreOrderComponent } from './pre-order/pre-order.component';
-import { SizeSelectionComponent } from './pre-order/size-selection/size-selection.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -24,7 +23,6 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
-import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -33,6 +31,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AuthenticationService } from './shared/auth.service';
 import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 import { AuthGuardService } from './shared/auth-guard.guard';
+import { HeaderLocalizationService } from './shared/hader-localization.service';
+import { LoginComponent } from './header/modals/login/login.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,6 @@ import { AuthGuardService } from './shared/auth-guard.guard';
     BlogCreateComponent,
     BlogDetailComponent,
     PreOrderComponent,
-    SizeSelectionComponent,
     SignInComponent,
     MyProfileComponent,
     ErrorComponent,
@@ -55,8 +54,8 @@ import { AuthGuardService } from './shared/auth-guard.guard';
     FaqComponent,
     TermsComponent,
     PolicyComponent,
-    DeliveryTimeComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +74,7 @@ import { AuthGuardService } from './shared/auth-guard.guard';
     CommonModule,
     FormsModule,
     ReactiveFormsModule],
-  providers: [AuthenticationService, AuthGuardService],
+  providers: [AuthenticationService, AuthGuardService, HeaderLocalizationService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

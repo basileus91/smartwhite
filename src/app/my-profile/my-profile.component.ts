@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 @Component({
   selector: 'app-my-profile',
@@ -20,7 +21,8 @@ export class MyProfileComponent implements OnInit {
   constructor(
     private readonly fb: FormBuilder,
     private readonly router: Router,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private readonly headerLocalizationService: HeaderLocalizationService
   ) { }
 
   ngOnInit(): void {
@@ -44,6 +46,8 @@ export class MyProfileComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.name = params['name'];
     });
+    this.headerLocalizationService.blackHeader.next(false);
+
   }
 
   display(tab: number){

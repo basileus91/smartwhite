@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 export interface Order {
   quantity: number,
@@ -20,11 +21,14 @@ export class PreOrderComponent implements OnInit {
 
   constructor(
     private readonly router: Router,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private readonly headerLocalizationService: HeaderLocalizationService
    ) { }
 
   ngOnInit(): void {
+    this.headerLocalizationService.blackHeader.next(false);
     this.quantity = 1;
+    
   }
 
   buy(): void { 

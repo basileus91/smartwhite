@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HeaderLocalizationService } from 'src/app/shared/hader-localization.service';
 import { Blog } from '../blog.component';
 
 @Component({
@@ -12,11 +13,13 @@ export class BlogDetailComponent implements OnInit {
 
   constructor(
     private readonly router: Router,
-    private readonly activatedRoute: ActivatedRoute
+    private readonly activatedRoute: ActivatedRoute,
+    private readonly headerLocalizationService: HeaderLocalizationService
   ) { }
 
   ngOnInit(): void {
     this.blog = window.history.state.data;
+    this.headerLocalizationService.blackHeader.next(false);
   }
 
   goToBlog(blog: Blog): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 @Component({
   selector: 'app-main-page',
@@ -8,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
   showSlide: number = 0;
 
-  constructor() { }
+  constructor(
+    private readonly headerLocalizationService: HeaderLocalizationService
+  ) { }
 
   ngOnInit(): void {
+    this.headerLocalizationService.blackHeader.next(true);
   }
   
   displayOtherSlide(): void {

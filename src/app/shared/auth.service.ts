@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpRequest, HttpResponse, HttpHandler, HttpEvent, HttpInterceptor, HTTP_INTERCEPTORS, HttpClient } from '@angular/common/http';
-import { BehaviorSubject, Observable, of, Subject, throwError } from 'rxjs';
-import { delay, mergeMap, materialize, dematerialize, map } from 'rxjs/operators';
-import { environment } from 'src/environments/environment';
+import { HttpClient } from '@angular/common/http';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 export interface User {
@@ -23,13 +21,12 @@ export const USER_DATA: User = <User> {
 export class AuthenticationService  {
     private currentUserSubject: BehaviorSubject<User>;
     public currentUser: Observable<User>;
-    isLogged = new Subject<boolean>();
+    isLogged: BehaviorSubject<boolean> = new BehaviorSubject<boolean>(false);
 
     constructor(private http: HttpClient,
         private readonly router: Router) {
         this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
         this.currentUser = this.currentUserSubject.asObservable();
-        this.isLogged.next(true);
     }
 
     public get currentUserValue(): User {
@@ -43,7 +40,6 @@ export class AuthenticationService  {
                 email: USER_DATA.email,
                 token: 'random_token-1234456789'
             }));
-            this.isLogged.next(false);
             return localStorage.getItem('currentUser');
         } else {
             return null;

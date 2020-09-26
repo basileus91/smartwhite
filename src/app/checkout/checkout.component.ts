@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Order } from '../pre-order/pre-order.component';
+import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 @Component({
   selector: 'app-checkout',
@@ -12,7 +13,8 @@ export class CheckoutComponent implements OnInit {
   registerForm: FormGroup;
 
   constructor(
-    private readonly fb: FormBuilder
+    private readonly fb: FormBuilder,
+    private readonly headerLocalizationService: HeaderLocalizationService
   ) { }
 
   ngOnInit(): void {
@@ -27,6 +29,7 @@ export class CheckoutComponent implements OnInit {
       city: ['', Validators.required],
       zipcode: [false, Validators.required]
     });
+    this.headerLocalizationService.blackHeader.next(false);
   }
 
   onSubmit() {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 export interface Blog {
   title: string,
@@ -261,10 +262,12 @@ export class BlogComponent implements OnInit {
 
   constructor(
     private readonly router: Router,
-    private readonly activatedRoute: ActivatedRoute
+    private readonly activatedRoute: ActivatedRoute,
+    private readonly headerLocalizationService: HeaderLocalizationService
   ) { }
 
   ngOnInit(): void {
+    this.headerLocalizationService.blackHeader.next(false);
   }
 
   goToDetails(blog: Blog): void {

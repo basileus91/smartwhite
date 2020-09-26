@@ -6,17 +6,14 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { OurStoryComponent } from './our-story/our-story.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { BlogComponent } from './blog/blog.component';
-import { BlogCreateComponent } from './blog/blog-create/blog-create.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { PreOrderComponent } from './pre-order/pre-order.component';
-import { SizeSelectionComponent } from './pre-order/size-selection/size-selection.component';
 import { AuthGuardService } from './shared/auth-guard.guard';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { ErrorComponent } from './error/error.component';
 import { FaqComponent } from './faq/faq.component';
 import { TermsComponent } from './terms/terms.component';
 import { PolicyComponent } from './policy/policy.component';
-import { DeliveryTimeComponent } from './delivery-time/delivery-time.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 
 const routes: Routes = [
@@ -27,10 +24,6 @@ const routes: Routes = [
   {
     path: 'products',
     component: ProductPageComponent
-  },
-  {
-    path: 'delivery-time',
-    component: DeliveryTimeComponent
   },
   {
     path: 'faq',
@@ -63,12 +56,6 @@ const routes: Routes = [
   {
     path: 'pre-order',
     component: PreOrderComponent,
-    children: [
-      {
-        path: 'size-selection',
-        component: SizeSelectionComponent
-      }
-    ]
   },
   {
     path: 'checkout',

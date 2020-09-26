@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 @Component({
   selector: 'app-our-story',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurStoryComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private readonly headerLocalizationService: HeaderLocalizationService
+  ) { }
 
   ngOnInit(): void {
+    this.headerLocalizationService.blackHeader.next(true);
   }
 
 }
