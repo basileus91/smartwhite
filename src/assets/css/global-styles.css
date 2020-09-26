@@ -32,7 +32,7 @@
         top: 0px;
         /* Defaul Light Theme */
         background: #0A0A0A;
-        margin-top: -27px;
+        margin-top: 0px;
     }
 
     .white-header {
@@ -45,7 +45,7 @@
         /* Defaul Light Theme */
         background: #F7F4F0;
         margin-bottom: -91px;
-        margin-top: -27px;
+        margin-top: 0px;
     }
 
     .display-none {
@@ -57,19 +57,19 @@
     margin-top: 35px;
 }
 
-.text-button-white {
-font-family: Fira Sans;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 17px;
-white-space: nowrap;
-/* identical to box height */
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-cursor: pointer;
-color: #0A0A0A;
+.text-button-white{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    white-space: nowrap;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #0A0A0A !important;
 }
 
 .text-button-black {
@@ -85,7 +85,7 @@ color: #0A0A0A;
     text-transform: uppercase;
     cursor: pointer;
     color: #FFFFFF;
-    }
+}
 
 
 .login-button {

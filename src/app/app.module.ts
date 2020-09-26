@@ -31,6 +31,7 @@ import { AuthGuardService } from './shared/auth-guard.guard';
 import { HeaderLocalizationService } from './shared/hader-localization.service';
 import { LoginComponent } from './header/modals/login/login.component';
 import { SizingChartComponent } from './shared/modals/sizing-chart/sizing-chart.component';
+import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { SizingChartComponent } from './shared/modals/sizing-chart/sizing-chart.
     ReactiveFormsModule,
     CommonModule,
     NgbModule,
-    HttpClientModule 
+    HttpClientModule ,
+    NgbCollapseModule
   ],
   exports: [
     CommonModule,

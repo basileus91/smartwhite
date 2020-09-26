@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   isLogin: boolean = true;
   isBlackHeader: boolean = false;
   isCollapsed: boolean = false;
-  isShown:boolean = false;
+  toggleNavbar:boolean = true;
 
   constructor(
     private readonly modalService: NgbModal,
