@@ -1,107 +1,26 @@
 <div class="pre-order">
     <div class="container container-information">
         <div class="row">
-          <div class="col-sm">
-            <div class="row">
+          <div class="col-sm-5 mx-auto">
+            <div class="row justify-content-center">
                 <img style="padding-right: 10px;padding-bottom: 10px;" height="300" src="../../assets/images/pre_order_1.png">
                 <img style="padding-bottom: 10px;" height="300" src="../../assets/images/pre_order_2.png">
             </div>
-            <div class="row">
+            <div class="row justify-content-center">
                 <img style="padding-right: 10px;padding-bottom: 10px;" height="300" src="../../assets/images/pre_order_3.png">
                 <img style="padding-bottom: 10px;" height="300" src="../../assets/images/pre_order_4.png">
             </div>
           </div>
-          <div class="col-sm">
+          <div class="col-sm-2 mx-auto"></div>
+          <div class="col-sm-5 mx-auto">
             <div>
                 <div class="col-sm">
                     <h3>Regular cotton linen-blend shirt</h3>
                     <h2>30$</h2>
                     <button class="sizing-chart" (click)="open(mymodal)">SIZING CHART</button>
-
                     <ng-template style="width: 950px;" #mymodal let-modal>
-                        <div class="modal-header">
-                            <div class="col-sm">
-
-                            </div>
-                            <div class="col-sm">
-                                <span class="modal-title">Sizing Chart</span>
-                                <span class="modal-close-button" (click)="modal.dismiss('Cross click')" aria-hidden="true">×</span>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <img width="450" src="../../assets/images/modal_shirt.png">
-                                </div>
-                                <div class="col-sm">
-                                    <table style="border: 1px solid #E5E5E5; box-sizing: border-box;" class="table table-bordered">
-                                        <thead>
-                                          <tr style="background: #FAF8F5;">
-                                            <th scope="col">Size (cm)</th>
-                                            <th scope="col">Small Slim Fit</th>
-                                            <th scope="col">Medium Slim Fit</th>
-                                            <th scope="col">Medium Regular</th>
-                                            <th scope="col">Large Regular</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Collar</th>
-                                            <td>38,5</td>
-                                            <td>40</td>
-                                            <td>40</td>
-                                            <td>41,5</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Shoulder</th>
-                                            <td>44</td>
-                                            <td>45,5</td>
-                                            <td>45,5</td>
-                                            <td>47,5</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Chest</th>
-                                            <td>103</td>
-                                            <td>107</td>
-                                            <td>107</td>
-                                            <td>110</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Waist</th>
-                                            <td>97</td>
-                                            <td>101</td>
-                                            <td>106,6</td>
-                                            <td>110,5</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Sleeve Lenght</th>
-                                            <td>88</td>
-                                            <td>89,5</td>
-                                            <td>89,5</td>
-                                            <td>91</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Lenghr</th>
-                                            <td>76,5</td>
-                                            <td>78</td>
-                                            <td>78</td>
-                                            <td>79,5</td>
-                                          </tr>
-                                          <tr>
-                                            <th style="background: #FAF8F5;" scope="row">Hem Width</th>
-                                            <td>103</td>
-                                            <td>107</td>
-                                            <td>107</td>
-                                            <td>110</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                            </div>
-                        </div>
-                        </div>
+                        <app-sizing-chart></app-sizing-chart>
                     </ng-template>
-
-
                     <div class="text-selection">CHOOSE YOUR SIZE</div>
                     <div class="btn-group" role="group">
                         <button (click)="selectedSize('XS')" type="button" class="radio-button">XS</button>

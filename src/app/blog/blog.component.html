@@ -1,9 +1,8 @@
 <div class="blog">
-    <div class="container">
-        <div class="blog-body">
-            <div class="row">
-                <div class="col-sm-3 col-md-offset-2" style="padding: 10px; padding-bottom: 10px; cursor: pointer;" *ngFor="let blog of blogData; let i = index">
-                    <div class="card" style="width: 18rem;" (click)="goToDetails(blog)">
+    <div class="container d-flex h-100">
+            <div class="row justify-content-center align-self-center">
+                <div class="col-sm-3 text-center" style="padding: 10px; padding-bottom: 10px; cursor: pointer;" *ngFor="let blog of blogData; let i = index">
+                    <div class="card" (click)="goToDetails(blog)">
                         <img [src]="blog.imageURL" class="card-img-top">
                         <div class="card-body">
                           <p class="card-text">{{blog.title}}</p>
@@ -19,6 +18,5 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>

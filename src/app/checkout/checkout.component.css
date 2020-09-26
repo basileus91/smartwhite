@@ -4,6 +4,7 @@
     height: 100%;
     top: 90px;
     background: #F7F4F0;
+    padding-bottom: 100px;
 }
 
 .policy-body {
@@ -24,7 +25,6 @@
     background: #FAFAFA !important;
     padding-top: 25px;
     padding-bottom: 25px;
-    margin-left: -14px;
 }
 
 .check-box {
@@ -52,7 +52,7 @@
 }
 
 .submit-button {
-    width: 493px;
+    width: 100%;
     height: 60px;
 /* Accent Smarthwhite */
     background: #e4b260;

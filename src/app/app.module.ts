@@ -7,7 +7,6 @@ import { ProductPageComponent } from './product-page/product-page.component';
 import { OurStoryComponent } from './our-story/our-story.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { BlogComponent } from './blog/blog.component';
-import { BlogCreateComponent } from './blog/blog-create/blog-create.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { PreOrderComponent } from './pre-order/pre-order.component';
 import { SignInComponent } from './sign-in/sign-in.component';
@@ -17,7 +16,6 @@ import { ErrorComponent } from './error/error.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { BlackHeaderComponent } from './black-header/black-header.component';
 import { FaqComponent } from './faq/faq.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -33,6 +31,7 @@ import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http'
 import { AuthGuardService } from './shared/auth-guard.guard';
 import { HeaderLocalizationService } from './shared/hader-localization.service';
 import { LoginComponent } from './header/modals/login/login.component';
+import { SizingChartComponent } from './shared/modals/sizing-chart/sizing-chart.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +41,6 @@ import { LoginComponent } from './header/modals/login/login.component';
     OurStoryComponent,
     DeliveryComponent,
     BlogComponent,
-    BlogCreateComponent,
     BlogDetailComponent,
     PreOrderComponent,
     SignInComponent,
@@ -50,12 +48,12 @@ import { LoginComponent } from './header/modals/login/login.component';
     ErrorComponent,
     HeaderComponent,
     FooterComponent,
-    BlackHeaderComponent,
     FaqComponent,
     TermsComponent,
     PolicyComponent,
     CheckoutComponent,
-    LoginComponent
+    LoginComponent,
+    SizingChartComponent
   ],
   imports: [
     BrowserModule,

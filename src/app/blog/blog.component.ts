@@ -211,7 +211,7 @@ export const DATA: Blog[] =  [
     ]
   },
   {
-    title: 'Non voluptate amet aute dolore non ullamco reprehenderit?',
+    title: 'Non voluptate amet aute dolore?',
     type: 'Breaking',
     date: 'August 23, 2019',
     imageURL: '../../assets/images/blog/blog_11.png',

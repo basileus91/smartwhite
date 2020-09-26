@@ -101,34 +101,3 @@ background: linear-gradient(61.82deg, #CC9D52 25.83%, #E6B260 80.3%);
 .email-input {
     background: #000000;
 }
-
-.modal-close {
-    background: #000000;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-}
-
-.modal-close-button {
-    float: right;
-    font-size: 30px;
-    margin-top: -9px;
-    cursor: pointer;
-}
-
-.modal-title {
-    font-family: Fira Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 34px;
-    /* identical to box height */
-    color: #e4b260;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-}
-
-.modal-xl {
-    width: 950px;
-  }
