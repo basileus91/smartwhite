@@ -55,7 +55,6 @@
 }
 
 .first-title {
-    width: 445px;
     height: 130px;
     left: 252px;
     top: 323px;
@@ -103,7 +102,6 @@
 }
 .product-title-description-2 {
     position: flex;
-    width: 460px;
     height: 192px;
     left: 252px;
     top: 422px;

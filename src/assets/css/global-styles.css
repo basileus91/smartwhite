@@ -21,6 +21,38 @@
     background: #F7F4F0;
 }
 
+@media only screen and (max-width: 375px) {
+/* Header styles */
+    .black-header {
+        /* Rectangle */
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        left: 0px;
+        top: 0px;
+        /* Defaul Light Theme */
+        background: #0A0A0A;
+        margin-top: -27px;
+    }
+
+    .white-header {
+        /* Rectangle */
+        position: absolute;
+        width: 100%;
+        height: 130px;
+        left: 0px;
+        top: 0px;
+        /* Defaul Light Theme */
+        background: #F7F4F0;
+        margin-bottom: -91px;
+        margin-top: -27px;
+    }
+
+    .display-none {
+        display: none;
+    }
+}
+
 .top-spacing {
     margin-top: 35px;
 }

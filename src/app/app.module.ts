@@ -9,7 +9,6 @@ import { DeliveryComponent } from './delivery/delivery.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogDetailComponent } from './blog/blog-detail/blog-detail.component';
 import { PreOrderComponent } from './pre-order/pre-order.component';
-import { SignInComponent } from './sign-in/sign-in.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorComponent } from './error/error.component';
@@ -43,7 +42,6 @@ import { SizingChartComponent } from './shared/modals/sizing-chart/sizing-chart.
     BlogComponent,
     BlogDetailComponent,
     PreOrderComponent,
-    SignInComponent,
     MyProfileComponent,
     ErrorComponent,
     HeaderComponent,

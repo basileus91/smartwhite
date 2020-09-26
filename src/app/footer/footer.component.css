@@ -101,3 +101,16 @@ background: linear-gradient(61.82deg, #CC9D52 25.83%, #E6B260 80.3%);
 .email-input {
     background: #000000;
 }
+
+@media only screen and (max-width: 375px) {
+
+	.footer {
+        position: inherit;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        height: 650px;
+        background: #000000;
+        
+    }
+}

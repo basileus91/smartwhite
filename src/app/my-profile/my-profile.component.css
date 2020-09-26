@@ -28,7 +28,7 @@
 }
 
 .button {
-    width: 35%; 
+    width: 50%; 
     height: 40px; 
     background: #e4b260;
     font-family: Fira Sans;
@@ -41,6 +41,23 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+@media only screen and (max-width: 375px) {
+	.button {
+		height: 50px; 
+        background: #e4b260;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+	}
 }
 
 .active {

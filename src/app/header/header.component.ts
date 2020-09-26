@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-import { User } from '../black-header/black-header.component';
-import { AuthenticationService } from '../shared/auth.service';
+import { FormGroup } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AuthenticationService, User } from '../shared/auth.service';
 import { HeaderLocalizationService } from '../shared/hader-localization.service';
 
 @Component({
@@ -19,6 +17,8 @@ export class HeaderComponent implements OnInit {
   errorMessage: string;
   isLogin: boolean = true;
   isBlackHeader: boolean = false;
+  isCollapsed: boolean = false;
+  isShown:boolean = false;
 
   constructor(
     private readonly modalService: NgbModal,

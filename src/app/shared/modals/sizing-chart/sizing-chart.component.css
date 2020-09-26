@@ -29,3 +29,11 @@
 .modal-xl {
     width: 950px;
   }
+
+@media only screen and (max-width: 375px) {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+}

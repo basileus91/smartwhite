@@ -5,8 +5,6 @@
     left: 0px;
     top: 90px;
     display: flex;
-    justify-content: center;
-    align-items: center;
 /* Bold Text Gradient */
     background: #0A0A0A;
 }
@@ -104,8 +102,6 @@
 
 .product-title-description-2 {
     position: flex;
-    width: 415px;
-    height: 192px;
     left: 252px;
     top: 422px;
     display: flex;
