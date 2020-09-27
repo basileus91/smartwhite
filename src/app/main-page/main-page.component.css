@@ -240,7 +240,8 @@ div {
 }
 
 .container-information { 
-    padding-left: 200px;
+    padding-left: 80px;
+    padding-top: 100px;
     padding-bottom: 200px;
 }
 
