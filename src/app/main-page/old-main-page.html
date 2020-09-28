@@ -1,0 +1,545 @@
+
+
+<!-- <div *ngIf="showSlide === 0">
+    <div class="main-page">
+        <span style="z-index: -2;" class="main-page-text">SMARTWHITE</span>
+        <div>
+            <div class="col">       
+                 <span class="text">Качество не должно быть дорогим.</span>
+                 <button class="button" [routerLink]="['/pre-order']">сделать предзаказ</button>
+            </div>
+            <img style="z-index: -1;margin-top: -200px;margin-bottom: -34px;" class="responsive" src="../../assets/images/man.png">
+            <button class="button-start" (click)="displayOtherSlide()">
+                <img style="transform: rotate(-45);" src="../../assets/images/arrow_down.png">
+            </button>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 1" (click)="displayOtherSlide()">
+    <div class="our-story-1">
+        <span style="z-index: -1;" class="our-story-text">SMARTWHITE</span>  
+    </div>
+</div>
+<div *ngIf="showSlide === 2" (click)="displayOtherSlide()">
+<div class="our-story-2" >
+    <span class="our-story-text">SMARTWHITE</span>
+    <div class="row">
+        <div class="col-sm-4">
+            <img class="responsive" style="margin-top: 20px;"
+            src="../../assets/images/cristin 1.png">
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <img class="responsive" 
+            src="../../assets/images/cristin 2.png">
+        </div>
+    </div>   
+</div>
+</div>
+<div *ngIf="showSlide === 3" (click)="displayOtherSlide()">
+    <app-our-story></app-our-story>
+</div> -->
+
+<!-- <div *ngIf="showSlide === 4" (click)="displayOtherSlide()">
+    <div class="product-1" >
+        <span style="z-index: -1;" class="our-story-text"></span>  
+    </div>
+</div>
+<div *ngIf="showSlide === 5" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5">
+                <span class="first-title-0">представляем</span>
+                <span class="first-title">Smartwhite Oxford Slim Fit</span>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_2.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 6" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5" style="text-align: center;">
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
+                </span>
+                <span class="first-title-0">Длина имеет значение</span>
+                <span class="product-title-description-2">Рубашки SmartWhite изготовлены из длинноволокнистого американского хлопка стандарта Supima® – лишь 1% вырабатываемого в мире сырья соответствует строгим требованиям этого сертификата. Полотно из хлопка Supima®легче, мягче и на 45% прочнее обычного. Ткань “дышит” и исключает образование катышков.</span>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_1.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 7" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5" style="text-align: center;">
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Технология non-iron
+                </span>
+                <span class="first-title-0">Свежий вид даже в конце рабочего дня</span>
+                <span class="product-title-description-2">В производстве рубашек SmartWhite используется инновационная технология non-iron, благодаря которой рубашки остаются свежими даже спустя 8 часов носки. Степень сминаемости наших изделий – 3.5, а значит рубашка SmartWhite не мнётся и почти не требует глажки. После стирки она самостоятельно восстанавливает форму.</span>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_2.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 8" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5" style="text-align: center;">
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Технология non-iron
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Воротник STAFLEX Tech
+                </span>
+                <span class="first-title-0">Сделано в Японии</span>
+                <span class="product-title-description-2">Воротник рубашки обязан держать форму и быть жёстким (а вы – нет). Накрахмаленная до хруста сорочка в прошлом, на смену пришли технологии. В нашем случае – из Японии. В ответе за безупречные воротнички рубашек SmartWhite лидер рынка - STAFLEX. Как результат - безукоризненная форма навсегда.</span>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_3.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 9" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5" style="text-align: center;">
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Технология non-iron
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Воротник STAFLEX Tech
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Безупречные швы
+                </span>
+                <span class="product-title-description-2">В деталях кроется успех. В рубашке SmartWhite идеально ровные швы, не собирающие ткань в неряшливые “морщинки”. Пройма скроена и оформлена максимально аккуратно. В нашей рубашке вы выглядите стильно и опрятно.</span>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_4.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 10" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5" style="text-align: center;">
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Технология non-iron
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Воротник STAFLEX Tech
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Безупречные швы
+                </span>
+                <span class="product-title" style="white-space: nowrap;">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Пуговицы с запасом прочности
+                </span>
+                <span class="product-title-description-2">В рубашке SmartWhite нет слабых мест, а одно из самых сильных - пуговицы. В 6 раз крепче обычных и с тщательно укрепленной петелькой, они прослужат в 16 раз дольше.</span>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_2.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 11" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="row">
+            <div class="col-sm-5" style="text-align: center;">
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Технология non-iron
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Воротник STAFLEX Tech
+                </span>
+                <span class="product-title">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Безупречные швы
+                </span>
+                <span class="product-title" style="white-space: nowrap;">
+                    <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Пуговицы с запасом прочности
+                </span>
+                <button style="margin-left: 240px;" class="buttton-more">More Details</button>
+            </div>
+            <div class="col-sm-7">
+                <img width="580" src="../../assets/images/tshirt_2.png">
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div *ngIf="showSlide === 12" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div><span class="price-header">почему</span></div>
+                    <div><span class="price-title">рубашка стоит так дешево?</span></div>
+                    <div>
+                        <span class="price-title-description">Мы принципиально задумали SmartWhite бизнесом, лишенным расходов на аренду торговых площадей, персонал, розничную наценку посредников и, будем честными, на космические бонусы топ-менеджмента. Мы убрали всё лишнее и получили идеальный продукт – бескомпромиссно качественную белую рубашку, в которой комфортно жить нам, и в которой будет комфортно жить вам.</span>
+                    </div>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 13" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">как</span></div>
+                <div><span class="price-title">создаётся базовая цена?</span></div>
+                <img src="../../assets/images/price_1.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_2.png">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 14" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">как</span></div>
+                <div><span class="price-title">создаётся базовая цена?</span></div>
+                <img src="../../assets/images/price_3.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 15" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">как</span></div>
+                <div><span class="price-title">создаётся базовая цена?</span></div>
+                <img src="../../assets/images/price_5.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 16" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">как</span></div>
+                <div><span class="price-title">создаётся базовая цена?</span></div>
+                <img src="../../assets/images/price_7.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_8.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 17" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">какие</span></div>
+                <div><span class="price-title">дополнительные затраты я покрываю?</span></div>
+                <!-- <img src="../../assets/images/price_9.png"> -->
+            <!-- </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_9.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 18" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">какие</span></div>
+                <div><span class="price-title">дополнительные затраты я покрываю?</span></div>
+                <img src="../../assets/images/price_10.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_11.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 19" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">какие</span></div>
+                <div><span class="price-title">дополнительные затраты я покрываю?</span></div>
+                <img src="../../assets/images/price_12.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_13.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 20" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">какие</span></div>
+                <div><span class="price-title">дополнительные затраты я покрываю?</span></div>
+                <img src="../../assets/images/price_14.png">
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <img style="position: relative; left: 100%;" src="../../assets/images/price_15.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 21" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">какие</span></div>
+                <div><span class="price-title">дополнительные затраты я покрываю?</span></div>
+                <img src="../../assets/images/price_16.png">
+            </div>
+            <div class="col-sm-6">
+                <span>2290 ₽</span>
+                <div>
+                    <img style="position: relative; left: 100%; margin-top: -170px;" src="../../assets/images/price_17.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 22" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="col-sm-6">
+                <div><span class="price-header">какие</span></div>
+                <div><span class="price-title">дополнительные затраты я покрываю?</span></div>
+                <img src="../../assets/images/price_18.png">
+            </div>
+            <div class="col-sm-6">
+                <span>2290 ₽</span>
+                <div>
+                    <img style="position: relative; left: 100%; margin-top: -170px;" src="../../assets/images/price_19.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div *ngIf="showSlide === 23" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container">
+            <div class="col-sm-6">
+                <span class="delivery-title">почему</span>
+                <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                <span class="delivery-description">Предварительные заказы позволяют нам гибко управлять материальными и производственными ресурсами. Это экономит наши и ваши затраты и напрямую влияет на ценообразование. Выбранная нами модель работы по предзаказу также является частью усилий, направленных на повышение экологичности и миним- изацию негативного влияния на окружающую среду. Миллионы нераспроданных предметов одежды крупные бренды ежегодно выбрасывают на свалку и загряз- няют планету. Мы за осознанное потребление. Поэтому производим только необходимое количество вещей.</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 24" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row">
+                <div style="margin-left: -100px;" class="col-sm-6 justify-content-start">
+                        <span class="delivery-title">почему</span>
+                        <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <div><span class="price-title">Заказ и доставка материалов</span></div>
+                </div>
+                <div style="margin-left: 100px;" class="col-sm-6 justify-content-end">
+                    <img src="../../assets/images/delivery_1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 25" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row" style="padding-bottom: 30px;">
+                <div style="margin-left: -100px;" class="col-sm-6 justify-content-start">
+                    <span class="delivery-title">почему</span>
+                        <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <div><span class="price-title">раскройка и нарезка выкройки</span></div>
+                </div>
+                <div style="margin-left: 100px;" class="col-sm-6 justify-content-end">
+                    <img src="../../assets/images/delivery_2.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -125px;width: 100%;">
+        <div class="col-sm-6"></div>
+        <div class="col-sm-6">
+            <img src="../../assets/images/delivery_2.1.png">
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 26" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row" style="padding-bottom: 30px;">
+                <div style="margin-left: -100px;" class="col-sm-6 justify-content-start">
+                    <span class="delivery-title">почему</span>
+                        <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <div><span class="price-title">сборка и пошив</span></div>
+                </div>
+                <div style="margin-left: 100px;" class="col-sm-6 justify-content-end">
+                    <img src="../../assets/images/delivery_3.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -125px;width: 100%;">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-10">
+            <img src="../../assets/images/delivery_3.1.png">
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 27" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row" style="padding-bottom: 30px;">
+                <div style="margin-left: -100px;" class="col-sm-6 justify-content-start">
+                    <span class="delivery-title">почему</span>
+                        <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <div><span class="price-title">non-iron обработка</span></div>
+                </div>
+                <div style="margin-left: 100px;" class="col-sm-6 justify-content-end">
+                    <img src="../../assets/images/delivery_4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -125px;width: 100%;">
+        <div class="col-sm-12">
+            <img src="../../assets/images/delivery_4.1.png">
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 28" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row" style="padding-bottom: 30px;">
+                <div style="margin-left: -100px;" class="col-sm-6 justify-content-start">
+                    <span class="delivery-title">почему</span>
+                        <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <div><span class="price-title">non-iron обработка</span></div>
+                </div>
+                <div style="margin-left: 100px;" class="col-sm-6 justify-content-end">
+                    <img src="../../assets/images/delivery_5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -125px;width: 100%;">
+        <div class="col-sm-12">
+            <img src="../../assets/images/delivery_5.1.png">
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 29" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row" style="padding-bottom: 30px;">
+                <div style="margin-left: -100px;" class="col-sm-6 justify-content-start">
+                    <span class="delivery-title">почему</span>
+                        <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <div><span class="price-title">non-iron обработка</span></div>
+                </div>
+                <div style="margin-left: 100px;" class="col-sm-6 justify-content-end">
+                    <img src="../../assets/images/delivery_6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -125px;width: 100%;">
+        <div class="col-sm-12">
+            <img src="../../assets/images/delivery_6.1.png">
+        </div>
+    </div>
+</div>
+<div *ngIf="showSlide === 30" (click)="displayOtherSlide()">
+    <div class="product-2">
+        <div class="container container-information">
+            <div class="row" style="padding-bottom: 30px;">
+                <div class="col-sm-6">
+                    <span class="delivery-title">почему</span>
+                    <span class="delivery-title-1">Я должен ждать 90 дней?</span>
+                    <button class="button">узнать больше</button>
+                </div>
+                <div class="col-sm-6">
+                    <img src="../../assets/images/delivery_6.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: -125px;width: 100%;">
+        <div class="col-sm-12">
+            <img style="margin-top: 50px;" src="../../assets/images/delivery_6.1.png">
+        </div>
+    </div>
+</div> -->
+<div *ngIf="showSlide === 31" (click)="displayOtherSlide()">
+    <div class="pre-order">
+        <div class="container container-information">
+            <div class="row">
+                <div class="col-sm-6">
+                    <img width="450" src="../../assets/images/final_photo.png">
+                </div>
+                <div class="col-sm-6">
+                    <span class="delivery-title">не тормози</span>
+                    <span class="price-title">Smartwhite Oxford Slim Fit</span>
+                    <button class="button" style="left:80px !important;" [routerLink]="['/pre-order']">зделать предзаказ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

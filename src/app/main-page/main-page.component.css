@@ -198,17 +198,12 @@ div {
     top: 422px;
     display: flex;
     justify-content: center;
-    padding-left: 130px;
     padding-top: 30px;
-
-    /* Default Type */
-
     font-family: Fira Sans;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
-    /* or 200% */
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
@@ -333,4 +328,138 @@ div {
     letter-spacing: 0.02em;
     color: #FFFFFF;
     width: 400px;
+}
+
+.our-story {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 90px;
+    background: #0A0A0A;
+}
+
+.our-story-text {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 140px;
+    line-height: 80px;
+    padding-top: 100px;
+    z-index: inherit 2;
+/* identical to box height, or 36% */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-story-title {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Accent Smarthwhite */
+    color: #e4b260;
+}
+
+.description {
+    width: 400px;
+    margin-left: -150px;
+    padding-bottom: 30px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.description-2 {
+    margin-left: 100px;
+    width: 400px;
+    /* Default Type */
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 375px) {
+    .our-story-text {
+        font-family: Exo;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 50px;
+        line-height: 80px;
+        padding-top: 100px;
+        z-index: inherit 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+	.our-story-title {
+        white-space: pre-wrap !important;
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Accent Smarthwhite */
+        color: #e4b260;
+    }
+    .description-2 {
+        width: fit-content !important;
+        margin-left: 0px;
+        /* Default Type */
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        /* or 200% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
+    .description {
+        width: fit-content !important;
+        margin-left: 0px;
+        /* Default Type */
+        font-family: Fira Sans;
+        font-style: normal;
+        font-weight: 300;
+        /* or 200% */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+    }
 }
