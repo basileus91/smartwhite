@@ -1,12 +1,12 @@
 <ng-container *ngIf="showSlide === 0">
     <div class="main-page" @container>
-        <span @enterExitUP style="z-index: -2;" class="main-page-text">SMARTWHITE</span>
+        <span @enterExitUP style="z-index: -2;" class="our-story-text">SMARTWHITE</span>
         <div>
             <div class="col">       
                 <span class="text">Качество не должно быть дорогим.</span>
                 <button class="button" [routerLink]="['/pre-order']">сделать предзаказ</button>
             </div>
-            <img @enterExitRight style="z-index: -1;margin-top: -200px;margin-bottom: -34px;" class="responsive" src="../../assets/images/man.png">
+            <img @enterExitRight style="z-index: -1;margin-top: -200px;margin-bottom: -34px;" class="responsive responsive-image" src="../../assets/images/man.png">
             <button class="button-start" (click)="displayOtherSlide()">
                 <img style="transform: rotate(-45);" src="../../assets/images/arrow_down.png">
             </button>
@@ -55,53 +55,53 @@
                             <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Хлопок класса люкс
                         </span>
                         <span @enterExitUP *ngIf="showSlide === 3" class="first-title-0">Длина имеет значение</span>
-                        <span @enterExitUP *ngIf="showSlide === 3" class="product-title-description-2">Рубашки SmartWhite изготовлены из длинноволокнистого американского хлопка стандарта Supima® – лишь 1% вырабатываемого в мире сырья соответствует строгим требованиям этого сертификата. Полотно из хлопка Supima®легче, мягче и на 45% прочнее обычного. Ткань “дышит” и исключает образование катышков.</span>
+                        <span @enterExitUP *ngIf="showSlide === 3" class="product-title-description-2 responsive-image">Рубашки SmartWhite изготовлены из длинноволокнистого американского хлопка стандарта Supima® – лишь 1% вырабатываемого в мире сырья соответствует строгим требованиям этого сертификата. Полотно из хлопка Supima®легче, мягче и на 45% прочнее обычного. Ткань “дышит” и исключает образование катышков.</span>
                         
                         <span *ngIf="showSlide !== 2 && showSlide !== 3" class="product-title">
                             <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Технология non-iron
                         </span>
                         <span @enterExitUP *ngIf="showSlide === 4" class="first-title-0">Свежий вид даже в конце рабочего дня</span>
-                        <span @enterExitUP *ngIf="showSlide === 4" class="product-title-description-2">В производстве рубашек SmartWhite используется инновационная технология non-iron, благодаря которой рубашки остаются свежими даже спустя 8 часов носки. Степень сминаемости наших изделий – 3.5, а значит рубашка SmartWhite не мнётся и почти не требует глажки. После стирки она самостоятельно восстанавливает форму.</span>
+                        <span @enterExitUP *ngIf="showSlide === 4" class="product-title-description-2 responsive-image">В производстве рубашек SmartWhite используется инновационная технология non-iron, благодаря которой рубашки остаются свежими даже спустя 8 часов носки. Степень сминаемости наших изделий – 3.5, а значит рубашка SmartWhite не мнётся и почти не требует глажки. После стирки она самостоятельно восстанавливает форму.</span>
         
                         <span *ngIf="showSlide !== 2 && showSlide !== 3 && showSlide !== 4" class="product-title">
                             <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Воротник STAFLEX Tech
                         </span>
                         <span @enterExitUP *ngIf="showSlide === 5" class="first-title-0">Сделано в Японии</span>
-                        <span @enterExitUP *ngIf="showSlide === 5" class="product-title-description-2">Воротник рубашки обязан держать форму и быть жёстким (а вы – нет). Накрахмаленная до хруста сорочка в прошлом, на смену пришли технологии. В нашем случае – из Японии. В ответе за безупречные воротнички рубашек SmartWhite лидер рынка - STAFLEX. Как результат - безукоризненная форма навсегда.</span>
+                        <span @enterExitUP *ngIf="showSlide === 5" class="product-title-description-2 responsive-image">Воротник рубашки обязан держать форму и быть жёстким (а вы – нет). Накрахмаленная до хруста сорочка в прошлом, на смену пришли технологии. В нашем случае – из Японии. В ответе за безупречные воротнички рубашек SmartWhite лидер рынка - STAFLEX. Как результат - безукоризненная форма навсегда.</span>
                    
                         <span *ngIf="showSlide !== 2 && showSlide !== 3 && showSlide !== 4 && showSlide !== 5" class="product-title">
                             <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Безупречные швы
                         </span>
-                        <span @enterExitUP *ngIf="showSlide === 6" class="product-title-description-2">В деталях кроется успех. В рубашке SmartWhite идеально ровные швы, не собирающие ткань в неряшливые “морщинки”. Пройма скроена и оформлена максимально аккуратно. В нашей рубашке вы выглядите стильно и опрятно.</span>
+                        <span @enterExitUP *ngIf="showSlide === 6" class="product-title-description-2 responsive-image">В деталях кроется успех. В рубашке SmartWhite идеально ровные швы, не собирающие ткань в неряшливые “морщинки”. Пройма скроена и оформлена максимально аккуратно. В нашей рубашке вы выглядите стильно и опрятно.</span>
     
                         <span *ngIf="showSlide !== 2 && showSlide !== 3 && showSlide !== 4 && showSlide !== 5 && showSlide !== 6" class="product-title" style="white-space: nowrap;">
                             <img style="height: 15px;margin-top: 13px;" src="../../assets/images/Rectangle.png">Пуговицы с запасом прочности
                         </span>
-                        <span @enterExitUP *ngIf="showSlide === 7" class="product-title-description-2">В рубашке SmartWhite нет слабых мест, а одно из самых сильных - пуговицы. В 6 раз крепче обычных и с тщательно укрепленной петелькой, они прослужат в 16 раз дольше.</span>
+                        <span @enterExitUP *ngIf="showSlide === 7" class="product-title-description-2 responsive-image">В рубашке SmartWhite нет слабых мест, а одно из самых сильных - пуговицы. В 6 раз крепче обычных и с тщательно укрепленной петелькой, они прослужат в 16 раз дольше.</span>
     
                         <button *ngIf="showSlide === 8" style="margin-left: 150px;" class="buttton-more">More Details</button>
                     </div>
     
                     <div *ngIf="showSlide === 2" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt.png">
                     </div>
                     <div *ngIf="showSlide === 3" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt.png">
                     </div>
                     <div *ngIf="showSlide === 4" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt_1.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt_1.png">
                     </div>
                     <div *ngIf="showSlide === 5" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt_2.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt_2.png">
                     </div>
                     <div *ngIf="showSlide === 6" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt_3.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt_3.png">
                     </div>
                     <div *ngIf="showSlide === 7" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt_4.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt_4.png">
                     </div>
                     <div *ngIf="showSlide === 8" class="col-sm-7">
-                        <img width="580" src="../../assets/images/tshirt_2.png">
+                        <img width="580" class="responsive-image" src="../../assets/images/tshirt_2.png">
                     </div>
                 </div>
             </div>
@@ -145,16 +145,16 @@
 
                 <div class="col-sm-6">
                     <div>
-                        <img *ngIf="showSlide === 10" style="position: relative; left: 100%;" src="../../assets/images/price_2.png">
-                        <img *ngIf="showSlide === 11" style="position: relative; left: 100%;" src="../../assets/images/price_4.png">
-                        <img *ngIf="showSlide === 12" style="position: relative; left: 100%;" src="../../assets/images/price_6.png">
-                        <img *ngIf="showSlide === 13" style="position: relative; left: 100%;" src="../../assets/images/price_8.png">
-                        <img *ngIf="showSlide === 14" style="position: relative; left: 100%;" src="../../assets/images/price_9.png">
-                        <img *ngIf="showSlide === 15" style="position: relative; left: 100%;" src="../../assets/images/price_11.png">
-                        <img *ngIf="showSlide === 16" style="position: relative; left: 100%;" src="../../assets/images/price_13.png">
-                        <img *ngIf="showSlide === 17" style="position: relative; left: 100%;" src="../../assets/images/price_15.png">
-                        <img *ngIf="showSlide === 18" style="position: relative; left: 100%;" src="../../assets/images/price_17.png">
-                        <img *ngIf="showSlide === 19" style="position: relative; left: 100%;" src="../../assets/images/price_19.png">
+                        <img class="responsive-image" *ngIf="showSlide === 10" style="position: relative; left: 100%;" src="../../assets/images/price_2.png">
+                        <img class="responsive-image" *ngIf="showSlide === 11" style="position: relative; left: 100%;" src="../../assets/images/price_4.png">
+                        <img class="responsive-image" *ngIf="showSlide === 12" style="position: relative; left: 100%;" src="../../assets/images/price_6.png">
+                        <img class="responsive-image" *ngIf="showSlide === 13" style="position: relative; left: 100%;" src="../../assets/images/price_8.png">
+                        <img class="responsive-image" *ngIf="showSlide === 14" style="position: relative; left: 100%;" src="../../assets/images/price_9.png">
+                        <img class="responsive-image" *ngIf="showSlide === 15" style="position: relative; left: 100%;" src="../../assets/images/price_11.png">
+                        <img class="responsive-image" *ngIf="showSlide === 16" style="position: relative; left: 100%;" src="../../assets/images/price_13.png">
+                        <img class="responsive-image" *ngIf="showSlide === 17" style="position: relative; left: 100%;" src="../../assets/images/price_15.png">
+                        <img class="responsive-image" *ngIf="showSlide === 18" style="position: relative; left: 100%;" src="../../assets/images/price_17.png">
+                        <img class="responsive-image" *ngIf="showSlide === 19" style="position: relative; left: 100%;" src="../../assets/images/price_19.png">
                     </div>
                 </div>
 
