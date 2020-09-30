@@ -32,6 +32,7 @@ import { HeaderLocalizationService } from './shared/hader-localization.service';
 import { LoginComponent } from './header/modals/login/login.component';
 import { SizingChartComponent } from './shared/modals/sizing-chart/sizing-chart.component';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -65,8 +66,9 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     CommonModule,
     NgbModule,
-    HttpClientModule ,
-    NgbCollapseModule
+    HttpClientModule,
+    NgbCollapseModule,
+    MatIconModule
   ],
   exports: [
     CommonModule,
