@@ -43,7 +43,7 @@
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
 	.button {
 		height: 50px; 
         background: #e4b260;

@@ -407,7 +407,7 @@ div {
     height: auto;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 400px) {
     .our-story-text {
         font-family: Exo;
         font-style: normal;
@@ -461,6 +461,13 @@ div {
         align-items: center;
         letter-spacing: 0.02em;
         color: #FFFFFF;
+    }
+
+    .main-page {
+        padding-bottom: 150px;
+    }
+    .button-order {
+        left: 50px !important;
     }
 
     .responsive-image {

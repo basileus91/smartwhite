@@ -1,10 +1,10 @@
 <ng-container *ngIf="showSlide === 0">
     <div class="main-page" @container>
-        <span @enterExitUP style="z-index: -2;" class="our-story-text">SMARTWHITE</span>
+        <span @enterExitUP style="z-index: -2;" class="our-story-text responsive-image">SMARTWHITE</span>
         <div>
             <div class="col">       
-                <span class="text">Качество не должно быть дорогим.</span>
-                <button class="button" [routerLink]="['/pre-order']">сделать предзаказ</button>
+                <span class="text d-none d-sm-block">Качество не должно быть дорогим.</span>
+                <button class="button button-order" [routerLink]="['/pre-order']">сделать предзаказ</button>
             </div>
             <img @enterExitRight style="z-index: -1;margin-top: -200px;margin-bottom: -34px;" class="responsive responsive-image" src="../../assets/images/man.png">
             <button class="button-start" (click)="displayOtherSlide()">

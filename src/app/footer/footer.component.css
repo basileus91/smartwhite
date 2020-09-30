@@ -102,8 +102,7 @@ background: linear-gradient(61.82deg, #CC9D52 25.83%, #E6B260 80.3%);
     background: #000000;
 }
 
-@media only screen and (max-width: 375px) {
-
+@media only screen and (max-width: 400px) {
 	.footer {
         position: inherit;
         left: 0%;
